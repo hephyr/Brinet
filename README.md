@@ -1,8 +1,32 @@
-# brinet
+# Brinet
 
-A new Flutter project.
+![](./icon/icon150.png)
 
-## Getting Started
+联通网拨号，一人登录全宿舍网上冲浪，不再需要每个手机/电脑都安装 91WiFi 了
 
-For help getting started with Flutter, view our online
-[documentation](https://flutter.io/).
+## 使用方法
+
+1. [下载 Android APP](https://github.com/iozephyr/Brinet/releases) (因Apple开发者申请太贵了，iOS 没有上架...
+2. 进入路由器后台确保路由器 DHCP 功能打开，联通进线插在路由器 WAN 口（如果你听不懂这是啥，自行搜索或者问周围可能知道的人
+3. 确保随便点开网页后能够弹出联通登录的界面
+4. 打开 APP 登录
+
+## 支持学校
+理论上支持，但个学校
+- 山东劳动职业技术学院
+- 青岛大学金家岭校区
+- 临沂大学本部
+- 临沂大学沂水校区
+- 山东旅游职业学院
+- 山东技师学院
+- 青岛大学浮山校区
+- 日照大学城
+- 济南大学
+- 山东蓝翔职业培训学院
+- 山东财经大学明水校区
+
+
+## 其他
+本项目采用 Flutter 开发，一套代码 Android iOS 全出来
+
+使用问题或者技术交流：i@zephyr.moe

@@ -162,24 +162,7 @@ class LoginPageState extends State<NetLogin> {
         )
       ),
       floatingActionButton: new FloatingActionButton(
-        // onPressed: submit,
-        onPressed: () {
-          showDialog(
-            context: context,
-            child: new AlertDialog(
-              content: new Row(
-                children: <Widget>[
-                  const CircularProgressIndicator(),
-                  // const SizedBox(width: 20.0,),
-                  // new Expanded(
-                  //   child: new Text(_log),
-                  // ),
-                ],
-              ),
-          ));
-          submit();
-          Navigator.pop(context);
-        },
+        onPressed: submit,
         child: new Icon(Icons.navigate_next),
         
       ),
