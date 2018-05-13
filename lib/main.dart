@@ -84,12 +84,12 @@ class LoginPageState extends State<NetLogin> {
     RegExp exp = new RegExp(r'window.location.href="(.*?)"');
     var match = exp.firstMatch(r.body);
     if (match == null) {
-      updatelog('Cannot get url');
+      updatelog('无法跳转，检查是否可以弹出登录页面');
       // _log = '';
       return;
     }
     var url = match.group(1);
-    updatelog(url);
+    updatelog('获取链接成功，正在登录');
     var u = Uri.parse(url);
     var q = u.queryParameters;
     url = 'http://'+u.host+'/sdjd/protalAction!portalAuth.action';
@@ -111,14 +111,14 @@ class LoginPageState extends State<NetLogin> {
     };
 
     r = await http.post(url, headers: headers, body: data);
-    updatelog(_log + r.body);
+    updatelog(r.body);
   }
 
   @override
   Widget build(BuildContext context) {
     return new Scaffold(
       appBar: new AppBar(
-        title: new Text('Login'),
+        title: new Text('联通网登录'),
       ),
       body: new Container(
         padding: new EdgeInsets.all(20.0),
